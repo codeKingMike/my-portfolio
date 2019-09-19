@@ -42,6 +42,9 @@
   #about {
       padding: 40px;
   }  
+  #about p {
+      letter-spacing: 2.6px;
+  }
   .projectdiv1 {
       background-color: #f1f1f1;
       padding: 20px;
@@ -135,6 +138,32 @@
   .page-header h1, .page-header h2 {
       font-size: 4rem
   }
+  .monoText {
+      font-family: monospace;
+  }
+  p {
+      font-size: 1.8rem;
+  }
+@media screen and (max-width: 600px) {
+    body {
+    background-color: ;
+  }
+  h1, h2, h3, h4 {
+      font-family: monospace;
+  }
+   #certificate .page-header p {
+      font-size: 2.2rem;
+  }
+  .page-header h1, .page-header h2 {
+      font-size: 3rem;
+      text-shadow: 2px 2px #a1a1a1;
+  }
+  #bbtn a {
+   font-size: 1.8rem;
+   padding: 10px 30px;
+   margin: 10px 0 70px 0;
+  }
+}
 </style>
 
 </head>
@@ -176,8 +205,8 @@
            </div>
            <div class="col-md-6 col-sm-6">
                <div class="page-header">
-                   <h1 class="text-center">About Me</h1>
-                   <p style="color: black;">Hello, my name is Michael Harris and I am a self taught programmer. Looking forward to becoming a front-end web developer one day.</p>
+                   <h1 class="text-center monoText">About Me</h1>
+                   <p style="color: black;">Hello, my name is Michael Harris and I am a self taught programmer. Looking forward to becoming a full stack web developer one day.</p>
                </div>
            </div>
        </div>
@@ -188,7 +217,7 @@
 <section id="project">
    <div class="container">
        <div class="page-header text-center">
-           <h2>Projects</h2>
+           <h2 class="monoText">Projects</h2>
            <p style="color:#000;">Here are projects I've accomplished. More coming soon.</p>
            <div class="container">
            <div class="row">
@@ -219,7 +248,7 @@
 <section id="certificate">
    <div class="container">
        <div class="page-header text-center">
-           <h1>Certificates</h1>
+           <h1 class="monoText">Certificates</h1>
            <p style="color:#000;">Certificate I've earned in the last month.</p>
            <div class="container">
            <div class="row">
@@ -288,7 +317,7 @@
 <div style="height: 70px;"></div>
 
 <div class="page-header text-center">
-   <h2 style="color: red;">Contact Me</h2>
+   <h2 class="monoText" style="color: red;">Contact Me</h2>
    <p>michaelh0405@gmail.com</p>
 </div>
 
