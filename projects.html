@@ -3,6 +3,7 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
    <title>Welcome To My Portfolio Page</title>
@@ -21,6 +22,10 @@
        font-family: sans-serif;
        font-size: 18px;
        background: #fffdff;
+       /* background: url(https://images.unsplash.com/photo-1528459105426-b9548367069b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60); */
+       /* background: #d8d8d8; */
+       color: #000;
+       height: 100%;
    }
 
    section{
@@ -115,12 +120,14 @@
   #projectFlexItems {
       display: grid;
       grid-template-columns: auto auto auto;
-      grid-gap: 20px;
+      grid-gap: 80px;
   }
   #projectFlex {
       width: 90%;
       margin: 0 auto;    
-      padding: 45px;  
+      padding: 45px; 
+      /* background: #f8f8f8; */
+      height: auto; 
   }
   #projectFlex h2 {
       font-size: 4rem; 
@@ -140,7 +147,10 @@
       text-align: center;
       
   }
-
+  .monoText {
+      font-family: monospace;
+      color: red;
+  }
   /* #singelPage {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -158,6 +168,11 @@
   span.text-right {
       margin-left: 800px;
   } */
+  /* #mini {
+      height: 150px;
+      background: url(https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
+      background-attachment: fixed;
+  } */
 
   @media screen and (max-width: 768px) {
     #projectFlexItems {
@@ -168,6 +183,9 @@
   .img-1 {
       padding-bottom: 55px;
       
+  }
+  #projectFlexItems {
+      height: 100%;
   }
   }
 
@@ -221,29 +239,29 @@
 <!--PICTURE & HEADER -->
  <section id="header">
     <div class="jumbotron text-center">
-        <h1>Projects</h1>
+        <h1 class="monoText">Projects</h1>
     </div>
 </section>
 
 <!-- PROJECTS -->
-<!-- <section id="project">
+<section id="project">
    <div class="container">
        <div class="page-header text-center">
            <h2 class="monoText">Redesigning Websites</h2>
            <p style="color:#000;">Here are projects I've accomplished. More coming soon.</p>
            <div class="container">
            <div class="row">
-               <div class="col-md-4 col-sm-4 projectdiv1">
+               <div class="col-md-4 projectdiv1">
                    <h4>Single Page Website</h4>
                    <img class="img-responsive" src="https://i.ibb.co/kmKH2Th/Screen-Shot-2019-09-26-at-5-00-05-PM.png" alt="img01022" border="0">
                    <a class="btn btn-default btn-lg showcase-btn" href="https://laskate.000webhostapp.com/" target="_blank">Visit Website</a>
                </div>
-               <div class="col-md-4 col-sm-4 projectdiv2">
+               <div class="col-md-4 projectdiv2">
                    <h4>Multi Page Website</h4>
                    <img class="img-responsive" src="https://i.ibb.co/g7Tjg03/Screen-Shot-2019-09-26-at-4-59-20-PM.png" alt="img0102" border="0">
                    <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">Visit Website</a>
                </div>
-               <div class="col-md-4 col-sm-4 projectdiv2">
+               <div class="col-md-4 projectdiv2">
                 <h4>Multi Page Website</h4>
                 <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
                 <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">Visit Website</a>
@@ -253,17 +271,19 @@
        
        </div>
    </div>
-</section> -->
+</section>
 <hr>
 
 <section id="projectFlex">
-    <div><h2 class="monoText text-center">Redesigning Websites</h2></div>
+    <div><h2 class="monoText text-center">Redesigning Websites</h2>
+        <p class="p-4">Please make sure your computer screen is at 100% zoom to see the actual size.</p>
+    </div>
     <div id="projectFlexItems">
         <div class="img-1">
-            <div>
-                <h3>git for Windows</h3>
+            <div class="projectdiv1">
+                <h3 class="pb-3 pr-3 pt-3">git for Windows</h3>
                    <img class="img-responsive" src="https://i.ibb.co/kmKH2Th/Screen-Shot-2019-09-26-at-5-00-05-PM.png" alt="img01022" border="0">
-                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, nesciunt.</p>
+                   <p></p>
                    <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
                    <div class="flexBtn">
                        <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
@@ -273,10 +293,10 @@
             </div>
         </div>
         <div class="img-2">
-            <div>
-                <h3>Blender</h3>
+            <div class="projectdiv2">
+                <h3 class="pb-3 pr-3 pt-3">Blender</h3>
                    <img class="img-responsive" src="https://i.ibb.co/g7Tjg03/Screen-Shot-2019-09-26-at-4-59-20-PM.png" alt="img0102" border="0">
-                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, nesciunt.</p>
+                   <p></p>
                    <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
                    <div class="flexBtn">
                        <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
@@ -285,10 +305,10 @@
             </div>
         </div>
         <div class="img-3">
-            <div>
-                <h3>My old job</h3>
+            <div class="projectdiv1">
+                <h3 class="pb-3 pr-3 pt-3">My old job</h3>
                 <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, nesciunt.</p>
+                <p></p>
                    <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
                    <div class="flexBtn">
                        <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
@@ -296,6 +316,46 @@
                    </div>
             </div>
         </div>
+
+        <div class="img-4">
+                <div class="projectdiv2">
+                    <h3 class="pb-3 pr-3 pt-3">My old job</h3>
+                    <img class="img-responsive" src="https://image.ibb.co/i54qNQ/img01022.png" alt="img0102" border="0">
+                    <p></p>
+                       <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
+                       <div class="flexBtn">
+                           <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
+                       <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
+                       </div>
+                </div>
+            </div>
+
+            <div class="img-5">
+                    <div class="projectdiv1">
+                        <h3 class="pb-3 pr-3 pt-3">git for Windows</h3>
+                           <img class="img-responsive" src="https://image.ibb.co/iYFdbk/img0102.png" alt="img01022" border="0">
+                           <p></p>
+                           <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
+                           <div class="flexBtn">
+                               <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
+                           <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
+                           </div>
+                           
+                    </div>
+                </div>
+
+                <div class="img-6">
+                        <div class="projectdiv2">
+                            <h3 class="pb-3 pr-3 pt-3">Blender</h3>
+                               <img class="img-responsive" src="https://i.ibb.co/kmKH2Th/Screen-Shot-2019-09-26-at-5-00-05-PM.png" alt="img0102" border="0">
+                               <p></p>
+                               <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
+                               <div class="flexBtn">
+                                   <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
+                               <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
+                               </div>
+                        </div>
+                    </div>
     </div>
 </section>
 
@@ -330,56 +390,41 @@
     </div>
 </section> -->
 
-<!-- CERTIFICATES SECTION ONE -->
-<!-- <section id="certificate">
-   <div class="container">
-       <div class="page-header text-center">
-           <h1 class="monoText">Certificates</h1>
-           <p style="color:#000;">Certificate I've earned.</p>
-           <div class="container">
-           <div class="row">
-               <div class="col-md-4 col-sm-4">
-                   <a href="https://i.ibb.co/SRQY7jh/CSS-certificate.jpg">
-                   <img class="img-responsive" src="https://i.ibb.co/pjFXSy6/CSS-certificate.jpg" alt="CSS-certificate" border="0">
-                   </a>
-                   <h3 class="text-center" >CSS</h3>
-               </div>
-               <div class="col-md-4 col-sm-4">
-                   <a href="https://i.ibb.co/J3ZYh3S/HTML-certificate.jpg">
-                   <img class="img-responsive" src="https://i.ibb.co/J3ZYh3S/HTML-certificate.jpg" alt="HTML-certificate" border="0">
-                   </a>
-                   <h3 class="text-center" >HTML</h3>
-               </div>
-               <div class="col-md-4 col-sm-4">
-                   <a href="https://i.ibb.co/4pCTqJK/Java-Script-certificate.jpg">
-                   <img class="img-responsive" src="https://i.ibb.co/4pCTqJK/Java-Script-certificate.jpg" alt="Java-Script-certificate" border="0">
-                   </a>
-                   <h3 class="text-center" >JavaScript</h3>
-               </div>
-           </div>
-       </div>
-       </div>
-   </div>
+<!-- <section id="abt-project">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Dummy Text</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+      </div> 
+      <div class="col-md-6 mt-3">
+        <img src="https://i.ibb.co/g7Tjg03/Screen-Shot-2019-09-26-at-4-59-20-PM.png" alt="img0102" width="100%" height="500px">
+      </div> 
+    </div>
+  </div>
 </section> -->
 
-<!-- CERTIFICATES SECTION TWO -->
-<!-- <section id="certificates">
-   <div class="container">
-                   <div class="row">
-                       <div class="col-md-6 col-sm-6">
-                           <a href="https://i.ibb.co/58MZkMC/PHP-certificate.jpg">
-                           <img class="img-responsive" src="https://i.ibb.co/58MZkMC/PHP-certificate.jpg" alt="PHP-certificate" border="0">
-                           </a>
-                           <h3 class="text-center" >PHP</h3>
-                       </div>
-                       <div class="col-md-6 col-sm-6">
-                       <a href="https://i.ibb.co/FXDZkTC/SQL-certificate.jpg">
-                           <img class="img-responsive" src="https://i.ibb.co/FXDZkTC/SQL-certificate.jpg" alt="SQL-certificate" border="0">
-                           </a>
-                           <h3 class="text-center" >SQL</h3>
-                       </div>
-                   </div>
-               </div>
+<div id="mini"><h2 class="text-center display-1 p-3">Mobile Responsive</h2></div>
+
+<!-- <section id="mobile">
+    <div class="container">
+        <h2 class="text-center">Mobile Responsive</h2>
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                    <h4>Multi Page Website</h4>
+                    <img class="img-responsive" src="https://image.ibb.co/iYFdbk/img0102.png" alt="img0102" border="0">
+                    <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">Visit Website</a>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                    <h4>Single Page Website</h4>
+                    <img class="img-responsive" src="https://image.ibb.co/i54qNQ/img01022.png" alt="img01022" border="0">
+                    <a class="btn btn-default btn-lg showcase-btn" href="https://laskate.000webhostapp.com/" target="_blank">Visit Website</a>
+                </div>     
+        </div>
+    </div>
 </section> -->
 
 

@@ -8,6 +8,8 @@
    <title>Welcome To My Portfolio Page</title>
    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -156,6 +158,40 @@
       font-size: 2.3rem;
       font-weight: 600;
   }
+  /* NEW STYLING */
+  #projectFlexItems {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 80px;
+  }
+  #projectFlex {
+      width: 90%;
+      margin: 0 auto;    
+      padding: 45px; 
+      background: #d8d8d8;
+      height: auto; 
+  }
+  #projectFlex h2 {
+      font-size: 4rem; 
+      padding: 30px;   
+  }
+  #projectFlex p {
+      text-align: center;
+      padding: 10px 0 0 0;
+  }
+  .flexBtn {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      
+  }
+  #projectFlex a.gitHub {
+      text-align: center;
+      
+  }
+  .img-1, .img-2, .img-3, .img-4, .img-5, .img-6 {
+      border: 3px solid black;
+  }
 @media screen and (max-width: 600px) {
     body {
     background-color: ;
@@ -247,7 +283,7 @@
 
 <!-- PROJECTS -->
 <section id="project">
-   <div class="container">
+   <div id="" class="container">
        <div class="page-header text-center">
            <h2 class="monoText">Projects</h2>
            <p style="color:#000;">Here are projects I've accomplished. More coming soon.</p>
@@ -272,7 +308,7 @@
 
        </div>
        </div>
-   </div>
+   
 </section>
 <hr>
 
