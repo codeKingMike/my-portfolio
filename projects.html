@@ -8,6 +8,8 @@
    <title>Welcome To My Portfolio Page</title>
    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -24,6 +26,8 @@
    section{
        margin: 0;
        padding: 0;
+   }
+   section h4{
        color: red;
    }
    #contact{
@@ -39,12 +43,6 @@
  .showcase-btn{
     margin-top: 30px;
   }   
-  #about {
-      padding: 40px;
-  }  
-  #about p {
-      letter-spacing: 2.6px;
-  }
   .projectdiv1 {
       background-color: #f1f1f1;
       padding: 20px;
@@ -92,39 +90,7 @@
   #certificate h2{
       margin-bottom: 50px;
   }
-  #tec h2 {
-      margin-bottom: 40px;
-      color: red;
-      font-weight: bold;
-      font-size: 50px;
-  }
-  #tec p {
-      font-size: 25px;
-      color: #a2a2a2;
-  }
-  #tec .percentbox {
-      margin-bottom: 35px;
-  }
-  #contact {
-      background:url("https://images.wallpaperscraft.com/image/laptop_cup_glasses_plant_114948_1920x1080.jpg");
-      padding: 30px;
-      border-top: red solid 2px;
-      border-bottom: red solid 2px;
-      background-position: right bottom;
-      background-attachment: fixed;
-      min-height: 450px;
-      background-size: cover;
-
-  }
-  #contact form {
-      margin-top: 30px;
-  }
-  #contact h1 {
-      text-align: center;
-      margin-top: 55px;
-      padding: 0 80px;
-      line-height: 2.2rem;
-  }
+ 
   span.page-header {
    font-weight: bold;
   }
@@ -132,30 +98,55 @@
       background-color: #f1f1f1;
       color: #000;
   }
-  #bbtn {
-   margin-top: 70px;
-  }
-  #bbtn a {
-   font-size: 2.2rem;
-   padding: 10px 30px;
-  }
   .page-header h1, .page-header h2 {
       font-size: 4rem
   }
-  .monoText {
+  /* .monoText {
       font-family: monospace;
-  }
+  } */
   p {
       font-size: 1.8rem;
-  }
-  #about span.cap {
-      text-transform: capitalize;
-      text-decoration: underline;
   }
   h3 {
       font-size: 2.3rem;
       font-weight: 600;
   }
+  /* NEW STYLING */
+  #projectFlexItems {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 20px;
+  }
+  #projectFlex {
+      width: 90%;
+      margin: 0 auto;      
+  }
+  #projectFlex p {
+      text-align: center;
+      padding: 10px 0 0 0;
+  }
+  .flexBtn {
+      display: flex;
+      justify-content: space-around;
+      
+  }
+  #projectFlex a.gitHub {
+      text-align: center;
+      
+  }
+
+  @media screen and (max-width: 768px) {
+    #projectFlexItems {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+  }
+  .img-1 {
+      padding-bottom: 55px;
+      
+  }
+  }
+
 @media screen and (max-width: 600px) {
     body {
     background-color: ;
@@ -174,23 +165,6 @@
    font-size: 1.8rem;
    padding: 10px 30px;
    margin: 10px 0 70px 0;
-  }
-  #contact {
-      display: grid;
-      grid-template-rows: 1fr 1fr;
-      grid-template-columns: 1fr;
-      height: 80vh;
-  }
-  #contact .row {
-      display: flex;
-      flex-direction: column-reverse;
-  }
-  #contact form {
-      padding-top: 50px;
-  }
-  #contact h1 {
-      padding: 0;
-      line-height: 2.2rem;
   }
   footer {
       padding: 15px;
@@ -223,58 +197,72 @@
 <!--PICTURE & HEADER -->
  <section id="header">
     <div class="jumbotron text-center">
-        <h1>Welcome To My Portfolio Page</h1>
+        <h1>Projects</h1>
     </div>
 </section>
-
-<!--ABOUT ME -->
-
-<section id="about">
-   <div class="container">
-       <div class="row">
-           <div class="col-md-6 col-sm-6">
-               <img class="img-responsive img-circle" src="https://image.ibb.co/maDZhQ/IMG_20140726_194942.jpg" alt="picture of michael harris" border="0">
-           </div>
-           <div class="col-md-6 col-sm-6">
-               <div class="page-header">
-                   <h1 class="text-center monoText">About Me</h1>
-                   <p style="color: black;">Hello, my name is Michael Harris and I am a self taught programmer, Looking forward to becoming a <span class="cap"><em>full stack web developer</em></span> one day.</p>
-               </div>
-           </div>
-       </div>
-   </div>
-</section> 
 
 <!-- PROJECTS -->
 <section id="project">
    <div class="container">
        <div class="page-header text-center">
-           <h2 class="monoText">Projects</h2>
+           <h2 class="monoText">Redesigning Websites</h2>
            <p style="color:#000;">Here are projects I've accomplished. More coming soon.</p>
            <div class="container">
            <div class="row">
-               <div class="col-md-6 col-sm-6 projectdiv1">
+               <div class="col-md-4 col-sm-4 projectdiv1">
                    <h4>Single Page Website</h4>
-                   <img class="img-responsive" src="https://image.ibb.co/i54qNQ/img01022.png" alt="img01022" border="0">
+                   <img class="img-responsive" src="https://i.ibb.co/kmKH2Th/Screen-Shot-2019-09-26-at-5-00-05-PM.png" alt="img01022" border="0">
                    <a class="btn btn-default btn-lg showcase-btn" href="https://laskate.000webhostapp.com/" target="_blank">Visit Website</a>
                </div>
-               <div class="col-md-6 col-sm-6 projectdiv2">
+               <div class="col-md-4 col-sm-4 projectdiv2">
                    <h4>Multi Page Website</h4>
-                   <img class="img-responsive" src="https://image.ibb.co/iYFdbk/img0102.png" alt="img0102" border="0">
+                   <img class="img-responsive" src="https://i.ibb.co/g7Tjg03/Screen-Shot-2019-09-26-at-4-59-20-PM.png" alt="img0102" border="0">
                    <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">Visit Website</a>
                </div>
+               <div class="col-md-4 col-sm-4 projectdiv2">
+                <h4>Multi Page Website</h4>
+                <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
+                <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">Visit Website</a>
+            </div>
            </div>
-
-     <div id="bbtn" class="container-fluid">
-       <a class="btn btn-primary btn-lg" href="projects.html" target="">Visit More Projects</a>
        </div>
-     </div>
-
-       </div>
+       
        </div>
    </div>
 </section>
 <hr>
+
+<section id="projectFlex">
+    <div id="projectFlexItems">
+        <div class="img-1">
+            <div>
+                <h3>git for Windows</h3>
+                   <img class="img-responsive" src="https://i.ibb.co/kmKH2Th/Screen-Shot-2019-09-26-at-5-00-05-PM.png" alt="img01022" border="0">
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, nesciunt.</p>
+                   <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
+                   <div class="flexBtn">
+                       <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
+                   <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
+                   </div>
+                   
+            </div>
+        </div>
+        <div class="img-2">
+            <div>
+                <h3>Blender</h3>
+                   <img class="img-responsive" src="https://i.ibb.co/g7Tjg03/Screen-Shot-2019-09-26-at-4-59-20-PM.png" alt="img0102" border="0">
+                   <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+        <div class="img-3">
+            <div>
+                <h3>My old job</h3>
+                <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
+                <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- CERTIFICATES SECTION ONE -->
 <section id="certificate">
@@ -328,58 +316,6 @@
                </div>
 </section>
 
-<!-- Technical Skills -->
-<hr>
-<div id="tec" class="container">
-<hr class="w3-opacity">
-     <h2 class="w3-padding-16">Technical Skills</h2>
-     <p class="w3-wide">Web Design</p>
-     <div class="w3-white">
-       <div class="w3-container w3-padding-small w3-center w3-grey percentbox" style="width:100%">100%</div>
-     </div>
-     <p class="w3-wide">Problem Solving</p>
-     <div class="w3-white">
-       <div class="w3-container w3-padding-small w3-center w3-grey percentbox" style="width:99.47%">99.47%</div>
-     </div>
-     <p class="w3-wide">Photoshop</p>
-     <div class="w3-white">
-       <div class="w3-container w3-padding-small w3-center w3-grey percentbox" style="width:90%">90%</div>
-     </div>
-</div>
-<div style="height: 70px;"></div>
-
-<div class="page-header text-center">
-   <h2 class="monoText" style="color: red;">Contact Me</h2>
-   <p>michaelh0405@gmail.com</p>
-</div>
-
-<!-- CONTACT ME -->
-<section id="contact">
- <div class="container">
-   <div class="row">
-     <div class="col-md-5 col-sm-5">
-       <form method="POST" action="">
-         <div class="form-group">
-           <label>Name: </label>
-           <input class="form-control" type="text" name="username" value="" placeholder="Enter Name">
-         </div>
-         <div class="form-group">
-           <label>Email: </label>
-           <input class="form-control" type="email" name="email" value="" placeholder="Enter Email">
-         </div>
-         <div class="form-group">
-           <label>Message: </label>
-           <textarea class="form-control" name="message" value="" placeholder="Enter Message"></textarea>
-         </div>
-         <input class="btn btn-default" type="submit" value="Submit">    
-       </form>
-     </div>
-     <div class="col-md-7 col-sm-7">
-       <h1 style="color: white;">Need a WEBSITE? I provide mobile responsive web applications.</h1>
-     </div>
-   </div>
- </div>
-</section>
 
 <!-- FOOTER AREA -->
 <footer>
