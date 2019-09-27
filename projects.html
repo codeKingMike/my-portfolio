@@ -3,7 +3,6 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
    <title>Welcome To My Portfolio Page</title>
@@ -15,440 +14,372 @@
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
  <script src="jquery-3.2.1.min.js"></script>
-<style>
-   body{
-       padding:0;
-       margin:0;
-       font-family: sans-serif;
-       font-size: 18px;
-       background: #fffdff;
-       /* background: url(https://images.unsplash.com/photo-1528459105426-b9548367069b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60); */
-       /* background: #d8d8d8; */
-       color: #000;
-       height: 100%;
-   }
-
-   section{
-       margin: 0;
-       padding: 0;
-   }
-   section h4{
-       color: red;
-   }
-   #contact{
-       background:url(http://www.hdwallpaperup.com/wp-content/uploads/2015/01/Laptop-wallpaper-1920x1080.jpg);
-   }
-   .jumbotron{
-       margin-top: -30px;
-       background-color: #000;
-   }
-   .jumbotron h1{
-       color: #fff;
-   }
- .showcase-btn{
-    margin-top: 30px;
-  }   
-  .projectdiv1 {
-      background-color: #f1f1f1;
-      padding: 20px;
-  }   
-  .projectdiv1:hover {
-      background-color: #f8f8ff;
-  }  
-  .projectdiv1 p {
-      padding: 30px;
-  }
-  .projectdiv2 {
-      background-color: #f8f8ff;
-      padding: 20px;
-  }   
-  .projectdiv2:hover {
-      background-color: #f1f1f1;
-  }  
-  .projectdiv2 p {
-      padding: 30px;
-  }
-  #project p {
-      margin-bottom: 40px;
-      color: #000;
-      letter-spacing: 2.6px;
-  }     
-  #project h4 {
-      margin-bottom: 40px;
-      color: #000;
-  } 
-  #project img {
-      margin-bottom: 15px;
-  }
-  #project a.showcase-btn:hover {
-      font-size: 25px;
-      background-color: red;
-      color: #fff;
-  }    
-  #project a {
-      margin-bottom: 20px;
-  }
-  #certificate p{
-      margin-bottom: 70px;
-      letter-spacing: 2.6px;
-  }
-  #certificate h2{
-      margin-bottom: 50px;
-  }
- 
-  span.page-header {
-   font-weight: bold;
-  }
-  footer {
-      background-color: #f1f1f1;
-      color: #000;
-  }
-  .page-header h1, .page-header h2 {
-      font-size: 4rem
-  }
-  /* .monoText {
-      font-family: monospace;
-  } */
-  p {
-      font-size: 1.8rem;
-  }
-  h3 {
-      font-size: 2.3rem;
-      font-weight: 600;
-  }
-  /* NEW STYLING */
-  #projectFlexItems {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      grid-gap: 80px;
-  }
-  #projectFlex {
-      width: 90%;
-      margin: 0 auto;    
-      padding: 45px; 
-      /* background: #f8f8f8; */
-      height: auto; 
-  }
-  #projectFlex h2 {
-      font-size: 4rem; 
-      padding: 30px;   
-  }
-  #projectFlex p {
-      text-align: center;
-      padding: 10px 0 0 0;
-  }
-  .flexBtn {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
+ <style>
+        body{
+            padding:0;
+            margin:0;
+            font-family: sans-serif;
+            font-size: 18px;
+            background: #fffdff;
+            /* background: url(https://images.unsplash.com/photo-1528459105426-b9548367069b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60); */
+            /* background: #d8d8d8; */
+            color: #000;
+            height: 100%;
+        }
+     
+        section{
+            margin: 0;
+            padding: 0;
+        }
+        section h4{
+            color: red;
+        }
+        #contact{
+            background:url(http://www.hdwallpaperup.com/wp-content/uploads/2015/01/Laptop-wallpaper-1920x1080.jpg);
+        }
+        .jumbotron{
+            margin-top: -30px;
+            background-color: #000;
+        }
+        .jumbotron h1{
+            color: #fff;
+        }
+      .showcase-btn{
+         margin-top: 30px;
+       }   
+       .projectdiv1 {
+           background-color: #f1f1f1;
+           padding: 20px;
+       }   
+       .projectdiv1:hover {
+           background-color: #f8f8ff;
+       }  
+       .projectdiv1 p {
+           padding: 30px;
+       }
+       .projectdiv2 {
+           background-color: #f8f8ff;
+           padding: 20px;
+       }   
+       .projectdiv2:hover {
+           background-color: #f1f1f1;
+       }  
+       .projectdiv2 p {
+           padding: 30px;
+       }
+       #project p {
+           margin-bottom: 40px;
+           color: #000;
+           letter-spacing: 2.6px;
+       }     
+       #project h4 {
+           margin-bottom: 40px;
+           color: #000;
+       } 
+       #project img {
+           margin-bottom: 15px;
+       }
+       #project a.showcase-btn:hover {
+           font-size: 25px;
+           background-color: red;
+           color: #fff;
+       }    
+       #project a {
+           margin-bottom: 20px;
+       }
+       #certificate p{
+           margin-bottom: 70px;
+           letter-spacing: 2.6px;
+       }
+       #certificate h2{
+           margin-bottom: 50px;
+       }
       
-  }
-  #projectFlex a.gitHub {
-      text-align: center;
-      
-  }
-  .monoText {
-      font-family: monospace;
-      color: red;
-  }
-  /* #singelPage {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      
-  }
-  .box1 {
-      background: #a1a1a1;
-  }
-  .flexThis {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-wrap: wrap;
-  }
-  span.text-right {
-      margin-left: 800px;
-  } */
-  /* #mini {
-      height: 150px;
-      background: url(https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
-      background-attachment: fixed;
-  } */
-  @media screen and (max-width: 1000px) {
-    #projectFlexItems {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 20px;
-  }
-  .img-1 {
-      padding-bottom: 55px;
-      
-  }
-  #projectFlexItems {
-      height: 100%;
-  }
-  }
-
-  @media screen and (max-width: 768px) {
-    #projectFlexItems {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 20px;
-  }
-  .img-1 {
-      padding-bottom: 55px;
-      
-  }
-  #projectFlexItems {
-      height: 100%;
-  }
-  }
-
-@media screen and (max-width: 600px) {
-    body {
-    background-color: ;
-  }
-  h1, h2, h3, h4 {
-      font-family: monospace;
-  }
-   #certificate .page-header p {
-      font-size: 2.2rem;
-  }
-  .page-header h1, .page-header h2 {
-      font-size: 3rem;
-      text-shadow: 2px 2px #a1a1a1;
-  }
-  #bbtn a {
-   font-size: 1.8rem;
-   padding: 10px 30px;
-   margin: 10px 0 70px 0;
-  }
-  footer {
-      padding: 15px;
-  }
-}
-</style>
+       span.page-header {
+        font-weight: bold;
+       }
+       footer {
+           background-color: #f1f1f1;
+           color: #000;
+       }
+       .page-header h1, .page-header h2 {
+           font-size: 4rem
+       }
+       /* .monoText {
+           font-family: monospace;
+       } */
+       p {
+           font-size: 1.8rem;
+       }
+       h3 {
+           font-size: 2.3rem;
+           font-weight: 600;
+       }
+       /* NEW STYLING */
+       #projectFlexItems {
+           display: grid;
+           grid-template-columns: auto auto auto;
+           grid-gap: 80px;
+       }
+       #projectFlex {
+           width: 90%;
+           margin: 0 auto;    
+           padding: 45px; 
+           /* background: #f8f8f8; */
+           height: auto; 
+       }
+       #projectFlex h2 {
+           font-size: 4rem; 
+           padding: 30px;   
+       }
+       #projectFlex p {
+           text-align: center;
+           padding: 10px 0 0 0;
+       }
+       .flexBtn {
+           display: flex;
+           justify-content: space-around;
+           flex-wrap: wrap;
+           
+       }
+       #projectFlex a.gitHub {
+           text-align: center;
+           
+       }
+       .monoText {
+           font-family: monospace;
+           color: red;
+       }
+       /* #singelPage {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           
+       }
+       .box1 {
+           background: #a1a1a1;
+       }
+       .flexThis {
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+           flex-wrap: wrap;
+       }
+       span.text-right {
+           margin-left: 800px;
+       } */
+       /* #mini {
+           height: 150px;
+           background: url(https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
+           background-attachment: fixed;
+       } */
+       @media screen and (max-width: 1000px) {
+         #projectFlexItems {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 20px;
+       }
+       .img-1 {
+           padding-bottom: 55px;
+           
+       }
+       #projectFlexItems {
+           height: 100%;
+       }
+       }
+     
+       @media screen and (max-width: 768px) {
+         #projectFlexItems {
+           display: grid;
+           grid-template-columns: 1fr;
+           grid-gap: 20px;
+       }
+       .img-1 {
+           padding-bottom: 55px;
+           
+       }
+       #projectFlexItems {
+           height: 100%;
+       }
+       }
+     
+     @media screen and (max-width: 600px) {
+         body {
+         background-color: ;
+       }
+       h1, h2, h3, h4 {
+           font-family: monospace;
+       }
+        #certificate .page-header p {
+           font-size: 2.2rem;
+       }
+       .page-header h1, .page-header h2 {
+           font-size: 3rem;
+           text-shadow: 2px 2px #a1a1a1;
+       }
+       #bbtn a {
+        font-size: 1.8rem;
+        padding: 10px 30px;
+        margin: 10px 0 70px 0;
+       }
+       footer {
+           padding: 15px;
+       }
+     }
+     </style>
 
 </head>
 <body>
 <!-- NAVBAR -->
 <header>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html"><span class="page-header">Portfolio Page</span></a>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><span class="page-header">Portfolio Page</span></a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown nabvar-right text-center"><a class="dropdown-toggle" data-toggle="dropdown" href="#">HOME <span class="caret"></span></a>
+           <ul class="dropdown-menu">
+             <li><a href="#">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#project">Projects</a></li>
+             <li><a href="#certificate">Certificates</a></li>
+             <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown nabvar-right text-center"><a class="dropdown-toggle" data-toggle="dropdown" href="#">HOME <span class="caret"></span></a>
-       <ul class="dropdown-menu">
-         <li><a href="#">Home</a></li>
-         <li><a href="#about">About</a></li>
-         <li><a href="#project">Projects</a></li>
-         <li><a href="#certificate">Certificates</a></li>
-         <li><a href="#contact">Contact</a></li>
-            </ul>
+        </nav>
+    </header> 
+    
+    <!--PICTURE & HEADER -->
+     <section id="header">
+        <div class="jumbotron text-center">
+            <h1 class="monoText">MY Projects</h1>
         </div>
-    </nav>
-</header> 
-
-<!--PICTURE & HEADER -->
- <section id="header">
-    <div class="jumbotron text-center">
-        <h1 class="monoText">MY Projects</h1>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<!-- <section id="project">
-   <div class="container">
-       <div class="page-header text-center">
-           <h2 class="monoText">Redesigning Websites</h2>
-           <p style="color:#000;">Here are projects I've accomplished. More coming soon.</p>
-           <div class="container">
-           <div class="row">
-               <div class="col-md-4 projectdiv1">
-                   <h4>Single Page Website</h4>
-                   <img class="img-responsive" src="https://i.ibb.co/kmKH2Th/Screen-Shot-2019-09-26-at-5-00-05-PM.png" alt="img01022" border="0">
-                   <a class="btn btn-default btn-lg showcase-btn" href="https://laskate.000webhostapp.com/" target="_blank">Visit Website</a>
+    </section>
+    
+    <!-- PROJECTS -->
+    <!-- <section id="project">
+       <div class="container">
+           <div class="page-header text-center">
+               <h2 class="monoText">Redesigning Websites</h2>
+               <p style="color:#000;">Here are projects I've accomplished. More coming soon.</p>
+               <div class="container">
+               <div class="row">
+                   <div class="col-md-4 projectdiv1">
+                       <h4>Single Page Website</h4>
+                       <img class="img-responsive" src="https://i.ibb.co/kmKH2Th/Screen-Shot-2019-09-26-at-5-00-05-PM.png" alt="img01022" border="0">
+                       <a class="btn btn-default btn-lg showcase-btn" href="https://laskate.000webhostapp.com/" target="_blank">Visit Website</a>
+                   </div>
+                   <div class="col-md-4 projectdiv2">
+                       <h4>Multi Page Website</h4>
+                       <img class="img-responsive" src="https://i.ibb.co/g7Tjg03/Screen-Shot-2019-09-26-at-4-59-20-PM.png" alt="img0102" border="0">
+                       <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">Visit Website</a>
+                   </div>
+                   <div class="col-md-4 projectdiv2">
+                    <h4>Multi Page Website</h4>
+                    <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
+                    <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">Visit Website</a>
+                </div>
                </div>
-               <div class="col-md-4 projectdiv2">
-                   <h4>Multi Page Website</h4>
-                   <img class="img-responsive" src="https://i.ibb.co/g7Tjg03/Screen-Shot-2019-09-26-at-4-59-20-PM.png" alt="img0102" border="0">
-                   <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">Visit Website</a>
-               </div>
-               <div class="col-md-4 projectdiv2">
-                <h4>Multi Page Website</h4>
-                <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
-                <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">Visit Website</a>
-            </div>
+           </div>
+           
            </div>
        </div>
-       
-       </div>
-   </div>
-</section> -->
-<hr>
-
-<section id="projectFlex">
-    <div><h2 class="monoText text-center">ALL PROJECTS</h2>
-        <p class="p-4">Please make sure your computer screen is at 100% zoom to see the actual size.
-            <br>All projects are <b>mobile responsive</b>.
-        </p>
-    </div>
-    <div id="projectFlexItems">
-        <div class="img-1">
-            <div class="projectdiv1">
-                <h3 class="pb-3 pr-3 pt-3">git for Windows</h3>
-                   <img class="img-responsive" src="https://i.ibb.co/kmKH2Th/Screen-Shot-2019-09-26-at-5-00-05-PM.png" alt="img01022" border="0">
-                   <p></p>
-                   <a class="gitHub" href="https://github.com/codeKingMike/git-webiste" target="_blank"><p><i class="fab fa-github"></i> gitHub</p></a>
-                   <div class="flexBtn">
-                       <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
-                   <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
-                   </div>
-                   
-            </div>
+    </section> -->
+    <hr>
+    
+    <section id="projectFlex">
+        <div><h2 class="monoText text-center">ALL PROJECTS</h2>
+            <p class="p-4">Please make sure your computer screen is at 100% zoom to see the actual size.
+                <br>All projects are <b>mobile responsive</b>.
+            </p>
         </div>
-        <div class="img-2">
-            <div class="projectdiv2">
-                <h3 class="pb-3 pr-3 pt-3">Blender</h3>
-                   <img class="img-responsive" src="https://i.ibb.co/g7Tjg03/Screen-Shot-2019-09-26-at-4-59-20-PM.png" alt="img0102" border="0">
-                   <p></p>
-                   <a class="gitHub" href="https://github.com/codeKingMike/blender-mobile" target="_blank"><p><i class="fab fa-github"></i> gitHub</p></a>
-                   <div class="flexBtn">
-                       <a class="btn btn-default btn-lg showcase-btn" href="https://blender.org" target="_blank">Original Website</a>
-                   <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
-                   </div>
-            </div>
-        </div>
-        <div class="img-3">
-            <div class="projectdiv1">
-                <h3 class="pb-3 pr-3 pt-3">My old job</h3>
-                <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
-                <p></p>
-                   <a class="gitHub" href="https://github.com/codeKingMike/old-job-website" target="_blank"><p><i class="fab fa-github"></i> gitHub</p></a>
-                   <div class="flexBtn">
-                       <a class="btn btn-default btn-lg showcase-btn" href="http://www.aegismarketingsolutions.com/" target="_blank">Original Website</a>
-                   <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
-                   </div>
-            </div>
-        </div>
-
-        <div class="img-4">
-                <div class="projectdiv2">
-                    <h3 class="pb-3 pr-3 pt-3">Personal Project</h3>
-                    <img class="img-responsive" src="https://image.ibb.co/i54qNQ/img01022.png" alt="img0102" border="0">
-                    <p></p>
-                       <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
+        <div id="projectFlexItems">
+            <div class="img-1">
+                <div class="projectdiv1">
+                    <h3 class="pb-3 pr-3 pt-3">git for Windows</h3>
+                       <img class="img-responsive" src="https://i.ibb.co/kmKH2Th/Screen-Shot-2019-09-26-at-5-00-05-PM.png" alt="img01022" border="0">
+                       <p></p>
+                       <a class="gitHub" href="https://github.com/codeKingMike/git-webiste" target="_blank"><p><i class="fab fa-github"></i> gitHub</p></a>
                        <div class="flexBtn">
-                           
-                       <a class="btn btn-default btn-lg showcase-btn" href="https://laskate.000webhostapp.com/" target="_blank">My Redesign</a>
+                           <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
+                       <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
+                       </div>
+                       
+                </div>
+            </div>
+            <div class="img-2">
+                <div class="projectdiv2">
+                    <h3 class="pb-3 pr-3 pt-3">Blender</h3>
+                       <img class="img-responsive" src="https://i.ibb.co/g7Tjg03/Screen-Shot-2019-09-26-at-4-59-20-PM.png" alt="img0102" border="0">
+                       <p></p>
+                       <a class="gitHub" href="https://github.com/codeKingMike/blender-mobile" target="_blank"><p><i class="fab fa-github"></i> gitHub</p></a>
+                       <div class="flexBtn">
+                           <a class="btn btn-default btn-lg showcase-btn" href="https://blender.org" target="_blank">Original Website</a>
+                       <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
                        </div>
                 </div>
             </div>
-
-            <div class="img-5">
-                    <div class="projectdiv1">
+            <div class="img-3">
+                <div class="projectdiv1">
+                    <h3 class="pb-3 pr-3 pt-3">My old job</h3>
+                    <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
+                    <p></p>
+                       <a class="gitHub" href="https://github.com/codeKingMike/old-job-website" target="_blank"><p><i class="fab fa-github"></i> gitHub</p></a>
+                       <div class="flexBtn">
+                           <a class="btn btn-default btn-lg showcase-btn" href="http://www.aegismarketingsolutions.com/" target="_blank">Original Website</a>
+                       <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
+                       </div>
+                </div>
+            </div>
+    
+            <div class="img-4">
+                    <div class="projectdiv2">
                         <h3 class="pb-3 pr-3 pt-3">Personal Project</h3>
-                           <img class="img-responsive" src="https://image.ibb.co/iYFdbk/img0102.png" alt="img01022" border="0">
-                           <p></p>
-                           <a class="gitHubHide" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
+                        <img class="img-responsive" src="https://image.ibb.co/i54qNQ/img01022.png" alt="img0102" border="0">
+                        <p></p>
+                           <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
                            <div class="flexBtn">
                                
-                           <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">My Redesign</a>
+                           <a class="btn btn-default btn-lg showcase-btn" href="https://laskate.000webhostapp.com/" target="_blank">My Redesign</a>
                            </div>
-                           
                     </div>
                 </div>
-
-                <div class="img-6">
-                        <div class="projectdiv2">
-                            <h3 class="pb-3 pr-3 pt-3">JS Clock</h3>
-                               <img class="img-responsive" src="https://i.ibb.co/gMcL0mM/Screen-Shot-2019-09-27-at-2-08-47-PM.png" alt="img0102" border="0">
+    
+                <div class="img-5">
+                        <div class="projectdiv1">
+                            <h3 class="pb-3 pr-3 pt-3">Personal Project</h3>
+                               <img class="img-responsive" src="https://image.ibb.co/iYFdbk/img0102.png" alt="img01022" border="0">
                                <p></p>
-                               <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
+                               <a class="gitHubHide" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
                                <div class="flexBtn">
-                                   <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
-                               <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
+                                   
+                               <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">My Redesign</a>
                                </div>
+                               
                         </div>
                     </div>
-    </div>
-</section>
-
-<!-- <section id="singelPageSection">
-        <h2>Singel Page <span class="text-right">Multi Page</span> </h2>
-    <div id="singelPage">
-        <div class="box1">
-                <div class="flexThis">
-                    <div>
-                            <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, nesciunt.</p>
-                               <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
-                               <div class="flexBtn">
-                                   <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
-                               <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
-                               </div>
-                    </div>
-                    <div>
-                            <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, nesciunt.</p>
-                   <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
-                   <div class="flexBtn">
-                       <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
-                   <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
-                   </div>
-                    </div>
-                </div>
+    
+                    <div class="img-6">
+                            <div class="projectdiv2">
+                                <h3 class="pb-3 pr-3 pt-3">JS Clock</h3>
+                                   <img class="img-responsive" src="https://i.ibb.co/gMcL0mM/Screen-Shot-2019-09-27-at-2-08-47-PM.png" alt="img0102" border="0">
+                                   <p></p>
+                                   <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
+                                   <div class="flexBtn">
+                                       <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
+                                   <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
+                                   </div>
+                            </div>
+                        </div>
         </div>
-        <div>
-                <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
-        </div>
+    </section>
+    
+    <!-- FOOTER AREA -->
+    <footer>
+       <div class="w3-default w3-center w3-padding-24">
+           <p>Created by: <code>Michael Harris</code> , Copyright &copy; 2019</p>
     </div>
-</section> -->
-
-<!-- <section id="abt-project">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h3>Dummy Text</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-      </div> 
-      <div class="col-md-6 mt-3">
-        <img src="https://i.ibb.co/g7Tjg03/Screen-Shot-2019-09-26-at-4-59-20-PM.png" alt="img0102" width="100%" height="500px">
-      </div> 
-    </div>
-  </div>
-</section> -->
-
-
-<!-- <section id="mobile">
-    <div class="container">
-        <h2 class="text-center">Mobile Responsive</h2>
-        <div class="row">
-            <div class="col-md-6 col-sm-6">
-                    <h4>Multi Page Website</h4>
-                    <img class="img-responsive" src="https://image.ibb.co/iYFdbk/img0102.png" alt="img0102" border="0">
-                    <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">Visit Website</a>
-            </div>
-            <div class="col-md-6 col-sm-6">
-                    <h4>Single Page Website</h4>
-                    <img class="img-responsive" src="https://image.ibb.co/i54qNQ/img01022.png" alt="img01022" border="0">
-                    <a class="btn btn-default btn-lg showcase-btn" href="https://laskate.000webhostapp.com/" target="_blank">Visit Website</a>
-                </div>     
-        </div>
-    </div>
-</section> -->
-
-
-<!-- FOOTER AREA -->
-<footer>
-   <div class="w3-default w3-center w3-padding-24">
-       <p>Created by: <code>Michael Harris</code> , Copyright &copy; 2019</p>
-</div>
-</footer>
+    </footer>
 </body>
 </html>
 
