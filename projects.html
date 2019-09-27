@@ -119,7 +119,12 @@
   }
   #projectFlex {
       width: 90%;
-      margin: 0 auto;      
+      margin: 0 auto;    
+      padding: 45px;  
+  }
+  #projectFlex h2 {
+      font-size: 4rem; 
+      padding: 30px;   
   }
   #projectFlex p {
       text-align: center;
@@ -128,12 +133,31 @@
   .flexBtn {
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
       
   }
   #projectFlex a.gitHub {
       text-align: center;
       
   }
+
+  /* #singelPage {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      
+  }
+  .box1 {
+      background: #a1a1a1;
+  }
+  .flexThis {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  span.text-right {
+      margin-left: 800px;
+  } */
 
   @media screen and (max-width: 768px) {
     #projectFlexItems {
@@ -202,7 +226,7 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="project">
+<!-- <section id="project">
    <div class="container">
        <div class="page-header text-center">
            <h2 class="monoText">Redesigning Websites</h2>
@@ -229,10 +253,11 @@
        
        </div>
    </div>
-</section>
+</section> -->
 <hr>
 
 <section id="projectFlex">
+    <div><h2 class="monoText text-center">Redesigning Websites</h2></div>
     <div id="projectFlexItems">
         <div class="img-1">
             <div>
@@ -251,21 +276,62 @@
             <div>
                 <h3>Blender</h3>
                    <img class="img-responsive" src="https://i.ibb.co/g7Tjg03/Screen-Shot-2019-09-26-at-4-59-20-PM.png" alt="img0102" border="0">
-                   <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">Visit Website</a>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, nesciunt.</p>
+                   <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
+                   <div class="flexBtn">
+                       <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
+                   <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
+                   </div>
             </div>
         </div>
         <div class="img-3">
             <div>
                 <h3>My old job</h3>
                 <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
-                <a class="btn btn-default btn-lg showcase-btn" href="https://michael-harris.000webhostapp.com/" target="_blank">Visit Website</a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, nesciunt.</p>
+                   <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
+                   <div class="flexBtn">
+                       <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
+                   <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
+                   </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- <section id="singelPageSection">
+        <h2>Singel Page <span class="text-right">Multi Page</span> </h2>
+    <div id="singelPage">
+        <div class="box1">
+                <div class="flexThis">
+                    <div>
+                            <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, nesciunt.</p>
+                               <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
+                               <div class="flexBtn">
+                                   <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
+                               <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
+                               </div>
+                    </div>
+                    <div>
+                            <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, nesciunt.</p>
+                   <a class="gitHub" href="#"><p><i class="fab fa-github"></i> gitHub</p></a>
+                   <div class="flexBtn">
+                       <a class="btn btn-default btn-lg showcase-btn" href="https://gitforwindows.org/index.html" target="_blank">Original Website</a>
+                   <a class="btn btn-default btn-lg showcase-btn" href="#" target="_blank">My Redesign</a>
+                   </div>
+                    </div>
+                </div>
+        </div>
+        <div>
+                <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
+        </div>
+    </div>
+</section> -->
+
 <!-- CERTIFICATES SECTION ONE -->
-<section id="certificate">
+<!-- <section id="certificate">
    <div class="container">
        <div class="page-header text-center">
            <h1 class="monoText">Certificates</h1>
@@ -294,10 +360,10 @@
        </div>
        </div>
    </div>
-</section>
+</section> -->
 
 <!-- CERTIFICATES SECTION TWO -->
-<section id="certificates">
+<!-- <section id="certificates">
    <div class="container">
                    <div class="row">
                        <div class="col-md-6 col-sm-6">
@@ -314,7 +380,7 @@
                        </div>
                    </div>
                </div>
-</section>
+</section> -->
 
 
 <!-- FOOTER AREA -->
