@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather&display=swap" rel="stylesheet">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -30,6 +33,9 @@
         section{
             margin: 0;
             padding: 0;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Merriweather', serif;
         }
         section h4{
             color: red;
@@ -119,12 +125,12 @@
        #projectFlexItems {
            display: grid;
            grid-template-columns: auto auto auto;
-           grid-gap: 80px;
+           grid-gap: 40px 70px;
        }
        #projectFlex {
            width: 90%;
            margin: 0 auto;    
-           padding: 45px; 
+           /* padding: 45px;  */
            /* background: #f8f8f8; */
            height: auto; 
        }
@@ -164,7 +170,7 @@
            text-decoration: underline;
        }
        .monoText {
-           font-family: monospace;
+        font-family: 'Merriweather', serif;
            color: red;
        }
       
@@ -245,7 +251,7 @@
     <!--PICTURE & HEADER -->
      <section id="header">
         <div class="jumbotron text-center">
-            <h1 class="monoText">MY Projects</h1>
+            <h1 class="monoText">My Projects</h1>
         </div>
     </section>
     
@@ -281,7 +287,7 @@
     <hr>
     
     <section id="projectFlex">
-        <div><h2 class="monoText text-center">ALL PROJECTS</h2>
+        <div><h2 class="monoText text-center">All Projects</h2>
             <p class="p-4">Please make sure your computer screen is at 100% zoom to see the actual size.
                 <br>All projects are <b>mobile responsive</b>.
             </p>
@@ -312,7 +318,7 @@
                        </div>
                 </div>
             </div>
-            <div class="img-3">
+            <!-- <div class="img-3">
                 <div class="projectdiv1">
                     <h3 class="pb-3 pr-3 pt-3">My old job</h3>
                     <img class="img-responsive" src="https://i.ibb.co/3cyXV3X/Screen-Shot-2019-09-26-at-5-00-51-PM.png" alt="img0102" border="0">
@@ -350,7 +356,7 @@
                                </div>
                                
                         </div>
-                    </div>
+                    </div> -->
     
                     <div class="img-6">
                             <div class="projectdiv2">
@@ -363,6 +369,39 @@
                                    </div>
                             </div>
                         </div>
+
+                        <!-- TEST -->
+            <div class="card" style="width: 28rem;">
+                <img src="https://i.ibb.co/kmKH2Th/Screen-Shot-2019-09-26-at-5-00-05-PM.png" class="card-img-top img-responsive" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://gitforwindows.org/index.html" class="btn btn-primary" target="_blank">Original Website</a>
+                  <a href="https://vibrant-shockley-88a36b.netlify.com" class="btn btn-primary" target="_blank">My Redesign</a>
+                </div>
+              </div>
+
+              <!-- TEST -->
+            <div class="card" style="width: 28rem;">
+                <img src="https://i.ibb.co/kmKH2Th/Screen-Shot-2019-09-26-at-5-00-05-PM.png" class="card-img-top img-responsive" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://gitforwindows.org/index.html" class="btn btn-primary" target="_blank">Original Website</a>
+                  <a href="https://vibrant-shockley-88a36b.netlify.com" class="btn btn-primary" target="_blank">My Redesign</a>
+                </div>
+              </div>
+
+              <!-- TEST -->
+            <div class="card" style="width: 28rem;">
+                <img src="https://i.ibb.co/kmKH2Th/Screen-Shot-2019-09-26-at-5-00-05-PM.png" class="card-img-top img-responsive" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://gitforwindows.org/index.html" class="btn btn-primary" target="_blank">Original Website</a>
+                  <a href="https://vibrant-shockley-88a36b.netlify.com" class="btn btn-primary" target="_blank">My Redesign</a>
+                </div>
+              </div>
         </div>
     </section>
     
