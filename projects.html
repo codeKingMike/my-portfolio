@@ -126,6 +126,7 @@
            display: grid;
            grid-template-columns: auto auto auto;
            grid-gap: 40px 70px;
+           padding: 60px 0;
        }
        #projectFlex {
            width: 90%;
@@ -147,9 +148,15 @@
        }
        #projectFlex ul {
            list-style-type: none;
+           padding: 15px 0;
        }
-       #projectFlex a {
-           
+       #projectFlex ul li {
+           padding: 3px 0;
+       }
+       #projectFlex a.customBtn {
+           font-size: 1.2rem;
+           padding: 10px 20px;
+           margin-bottom: 30px;
        }
        #projectFlex p {
            text-align: center;
@@ -170,6 +177,10 @@
            font-weight: 300;
            
            text-decoration-color: grey;
+       }
+       .gitHub i {
+           height: 10px;
+           
        }
        .gitHub:hover {
            color: green;
@@ -299,7 +310,7 @@
             </p>
         </div>
         <div id="projectFlexItems">
-            <div class="img-1">
+            <!-- <div class="img-1">
                 <div class="projectdiv1">
                     <h3 class="pb-3 pr-3 pt-3">git for Windows</h3>
                        <img class="img-responsive" src="https://i.ibb.co/kmKH2Th/Screen-Shot-2019-09-26-at-5-00-05-PM.png" alt="img01022" border="0">
@@ -323,7 +334,7 @@
                        <a class="btn btn-primary btn-lg showcase-btn" href="https://naughty-williams-1d5e29.netlify.com" target="_blank">My Redesign</a>
                        </div>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="img-3">
                 <div class="projectdiv1">
                     <h3 class="pb-3 pr-3 pt-3">My old job</h3>
@@ -364,7 +375,7 @@
                         </div>
                     </div> -->
     
-                    <div class="img-6">
+                    <!-- <div class="img-6">
                             <div class="projectdiv2">
                                 <h3 class="pb-3 pr-3 pt-3">JS Clock</h3>
                                    <img class="img-responsive" src="https://i.ibb.co/gMcL0mM/Screen-Shot-2019-09-27-at-2-08-47-PM.png" alt="img0102" border="0">
@@ -374,7 +385,7 @@
                                    <a class="btn btn-default btn-lg showcase-btn" href="https://gifted-minsky-6cb563.netlify.com" target="_blank">View Project</a>
                                    </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- BLENDER PROJECT -->
             <div class="card text-center" style="width: 28rem;">
@@ -388,14 +399,15 @@
                       <li>Flex | Grid</li>
                       <li>Bootstrap</li>
                   </ul>
-                  <a href="https://www.blender.org/" class="btn btn-primary" target="_blank">Original Website</a>
-                  <a href="https://naughty-williams-1d5e29.netlify.com" class="btn btn-primary" target="_blank">My Redesign</a>
+                  <a class="gitHub" href="https://github.com/codeKingMike/blender-mobile" target="_blank"><p><i class="fab fa-github"></i></p></a>
+                  <a href="https://www.blender.org/" class="btn btn-primary customBtn" target="_blank">Original Website</a>
+                  <a href="https://naughty-williams-1d5e29.netlify.com" class="btn btn-primary customBtn" target="_blank">My Redesign</a>
                 </div>
               </div>
 
               <!-- SOLOLEARN PROJECT -->
             <div class="card text-center" style="width: 28rem;">
-                <img style="height: 270px;" src="https://i.ibb.co/vL65ggP/solo.png" class="card-img-top img-responsive" alt="...">
+                <img style="height: 270px;" src="https://i.ibb.co/cyWkJc1/sololearn-Project.png" class="card-img-top img-responsive" alt="...">
                 <div class="card-body">
                   <h4 class="card-title">SoloLearn</h4>
                     <ul class="card-text text-center">
@@ -404,8 +416,9 @@
                         <li>Flex | Grid</li>
                         <li>Bootstrap</li>
                     </ul>
-                  <a href="https://www.sololearn.com/" class="btn btn-primary" target="_blank">Original Website</a>
-                  <a href="https://brave-cray-cdadc6.netlify.com" class="btn btn-primary" target="_blank">My Redesign</a>
+                    <a class="gitHub" href="https://github.com/codeKingMike/sololearn" target="_blank"><p><i class="fab fa-github"></i></p></a>
+                  <a href="https://www.sololearn.com/" class="btn btn-primary customBtn" target="_blank">Original Website</a>
+                  <a href="https://brave-cray-cdadc6.netlify.com" class="btn btn-primary customBtn" target="_blank">My Redesign</a>
                 </div>
               </div>
 
@@ -420,12 +433,13 @@
                         <li>Flex | Grid</li>
                         <li>Bootstrap</li>
                     </ul>
-                  <a href="https://gitforwindows.org/index.html" class="btn btn-primary" target="_blank">Original Website</a>
-                  <a href="https://vibrant-shockley-88a36b.netlify.com" class="btn btn-primary" target="_blank">My Redesign</a>
+                    <a class="gitHub" href="https://github.com/codeKingMike/git-webiste" target="_blank"><p><i class="fab fa-github"></i></p></a>
+                  <a href="https://gitforwindows.org/index.html" class="btn btn-primary customBtn" target="_blank">Original Website</a>
+                  <a href="https://vibrant-shockley-88a36b.netlify.com" class="btn btn-primary customBtn" target="_blank">My Redesign</a>
                 </div>
               </div>
 
-              <!-- TEST -->
+              <!-- JS CLOCK PROJECT -->
             <div class="card text-center" style="width: 28rem;">
                 <img src="https://i.ibb.co/gMcL0mM/Screen-Shot-2019-09-27-at-2-08-47-PM.png" class="card-img-top img-responsive" alt="...">
                 <div class="card-body">
@@ -435,11 +449,13 @@
                         <li>CSS3</li>
                         <li>JavaScript</li>
                     </ul>   
-                  <a href="https://gitforwindows.org/index.html" class="btn btn-primary" target="_blank">Original Website</a>
-                  <a href="https://gifted-minsky-6cb563.netlify.com" class="btn btn-primary" target="_blank">My Redesign</a>
+                    <a class="gitHub" href="https://github.com/codeKingMike/clock" target="_blank"><p><i class="fab fa-github"></i></p></a>
+                  <a href="https://gitforwindows.org/index.html" class="btn btn-primary customBtn" target="_blank">Original Website</a>
+                  <a href="https://gifted-minsky-6cb563.netlify.com" class="btn btn-primary customBtn" target="_blank">My Redesign</a>
                 </div>
               </div>
         </div>
+        <a class="gitHub" href="https://github.com/codeKingMike/git-webiste" target="_blank"><p><i class="fab fa-github"></i> gitHub</p></a>
     </section>
     
     <!-- FOOTER AREA -->
